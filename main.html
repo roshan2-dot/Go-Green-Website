@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Aboutgreen</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+	
+</head>
+<body>
+	<div class="stay">
+	<div class="header clearfix">
+		<div class="header2">
+			<!--Logo of the page-->
+			<div class="logo">
+			<img src="logo.png" width="150px">
+		</div>
+		<!--Head-->
+	<header>
+		<h1>AboutGreen</h1>
+	</header>
+</div><!--End div of class header 2-->
+<!--Search Bar-->
+<form class="form">
+	<input type="search" name="search" id="search" placeholder="Search here...">
+	<input type="submit" name="sub" value="Search">
+</form>
+<!--Navigation Bar-->
+<nav>
+	<div ><i class="fa fa-bars"></i></div>
+	<ul class="stay_ul">
+		<li><a href="main.html">Home</a></li>
+		<li><a href="herbs.html">Herbs <i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Climber</a></li>
+				<li><a href = "#"> Creeper</a></li>
+			</ul>
+		</li>
+		<li><a href="shrubs.html">Shrubs</a></li>
+		<li><a href="trees.html">Trees<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Cold Climate</a></li>
+				<li><a href = "#"> Moderate Climate</a></li>
+				<li><a href = "#"> Hot Climate</a></li>
+			</ul>			
+		</li>
+		<li><a href="gogreen.html">GoGreen<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Refuse</a></li>
+				<li><a href = "#"> Reduce</a></li>
+				<li><a href = "#"> Reuse</a></li>
+				<li><a href = "#"> Recycle</a></li>
+
+			</ul>					
+		</li>
+		<li><a href="login.html">Join Member</a></li>
+	</ul>
+</nav>
+<!--jquery script for responsive menu toggle-->
+<script type="text/javascript">
+$("nav div").click(function() {
+	$("ul").slideToggle();
+	$("ul ul").css("display",none);
+});
+
+$("ul li").click(function() {
+	$("ul ul").slideUp();
+	$(this).find('ul').slideToggle();
+});
+ $(window).resize(function(){
+		if($(window).width() > 800){
+			$("ul").removeAttr('style')
+		}
+ });
+</script>
+</div>
+</div><!--End div of class stay-->
+<!--Blinking sentence-->
+<div class="information">
+	<div class="blink"><span>You can get all the detailed information about the plants.</span></div>
+	</div>
+	<!--Slide Show-->
+	<div class="slideContainer">
+		<div class="Slide fade">
+		<img src="slide/image1.jpg" />
+		<div class="Caption">Photo 1</div>
+		</div>
+		<div class="Slide fade">
+		<img src="slide/forest.jpg" />
+		<div class="Caption">Photo 2</div>
+		</div>
+		<div class="Slide fade">
+		<img src="slide/image 3.png" />
+		<div class="Caption">Photo 3</div>
+		</div>
+		<div class="Slide fade">
+		<img src="slide/nature1.jfif" />
+		<div class="Caption">Photo 4</div>
+		</div>
+		<div class="Slide fade">
+		<img src="slide/flower2.jpg" />
+		<div class="Caption">Photo 5</div>
+		</div>
+		<a class="prevBtn">&#10094;</a>
+		<a class="nextBtn">&#10095;</a>
+		</div>
+		<br />
+		<!--Nav dots-->
+		<div style="text-align:center">
+		<span class="Navdot" onclick="currentSlide(1)"></span>
+		<span class="Navdot" onclick="currentSlide(2)"></span>
+		<span class="Navdot" onclick="currentSlide(3)"></span>
+		<span class="Navdot" onclick="currentSlide(4)"></span>
+		<span class="Navdot" onclick="currentSlide(5)"></span>
+		</div>
+<!--Main body div-->    
+<div class="home">
+<div class="container2 parag1">
+		<h2>Afforestation and Plantaion</h2><br>
+		<p>Afforestation is the process of planting trees, or sowing seeds, in a barren land devoid of any trees to create a forest. The term should not be confused with reforestation, which is the process of specifically planting native trees into a forest that has decreasing numbers of trees. While reforestation is increasing the number of trees of an existing forest, afforestation is the creation of a ‘new’ forest.The main varieties of trees used for afforestation are: Acacias (mimosoideae),Acacia laeta,Acacia cyanophylla,Acacia Senegal,etc.</p>
+	</div>
+		<div class="green clearfix">
+		<img src="various.jpg " width="500" style="margin-top: 40px;"> 
+		</div>
+		<div class="species">
+		<h2>Short About Plants</h2><br>
+		<p>Herbs: Starting from the smallest, herb is a short-sized plant with soft, green, delicate stem without the woody tissues. They complete their life cycle within one or two seasons. Generally, they have few branches or are branch less. These can be easily uprooted from the soil. Herbs contain enough nutritional benefits including vitamins and minerals to make it a part of a healthy balanced diet. Tomato, wheat, paddy, grass are a few examples of herbs.</p><br>
+
+    <p>Shrubs: Shrubs are medium-sized, woody plants taller than herbs and shorter than a tree. Their height usually ranges between 6 m-10 m or 20 ft–33 ft tall. Their features include bushy, hard and woody stems with many branches. Although stems are hard, they are flexible but not fragile. The life-span of these plants are for many years. Rose, jasmine lemon, tulsi, and henna are some of the common shrubs around us.</p><br>
+
+    <p>Trees: Trees are big and tall plants. They have very thick, woody and hard stems called the trunk. This single main stem or the trunk gives rise to many branches that bear leaves, flowers and fruits. Some trees are branch less like coconut tree; i.e., they have only one main stem which bears leaves, flowers, and fruits all by itself. The life-span of the trees are very large. i.e, for several years. Banyan, mango, neem, cashew, teak, oak are some examples of trees.</p><br>
+
+In addition to these three categories of plants, there are two more types which need some support to grow. They are specifically called climbers and creepers</p>
+	</div>
+</div>
+</body>
+<!--Footer section-->
+<footer>
+	<div class=foots>
+		<div class="media">
+			<a href="https://www.facebook.com/">
+				<img src="media/facebook.png" width="35px" height="35px">
+				<h4>Facebook</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://twitter.com/">
+				<img src="media/twitter.png" width="35px" height="35px">
+				<h4>Twitter</h4>
+			</a></div>
+			<div class="media">
+			<a href="http://www.iucn.org/">
+				<img src="media/iucn.png" width="53px" height="35px">
+				<h4>IUCN</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://www.instagram.com/">
+				<img src="media/Instagram-Logo.png" width="35px" height="35px">
+				<h4>Instagram</h4>
+			</a></div>
+			<div class="about">
+				<h5>About Us</h5>
+				<p>This is a simple sample website where the <br>user can get information about the differnt<br> plants and theri respective classification<br> with clear image.</p>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<p>
+					Location: Newroad,Kathmandu<br>
+					Phone No.:9846592548/9841524855<br>
+					PO. BOX:25489<br>
+					Gmail:magarroshanthapa2019@gmail.com
+				</p>
+			</div>
+			<div class="copy-right">
+			<p>Copyright &copy Roshan Magar 2019</p></div>		
+	</div>
+</footer>	
+<script type="text/javascript" src="main.js"></script>
+</html>	

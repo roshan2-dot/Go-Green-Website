@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Aboutgreen</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="gogreen.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="stay">
+	<div class="header clearfix">
+		<div class="header2">
+			<!--Logo-->
+			<div class="logo">
+			<img src="logo.png" width="150px">
+		</div>
+	<!--Head of the page-->
+	<header>
+		<h1>AboutGreen</h1>
+	</header>
+</div>
+
+<!--Search Bar-->
+<form class="form">
+	<input type="search" name="search" id="search" placeholder="Search here...">
+	<input type="submit" name="sub" value="Search">
+</form>
+
+<!--Navigation Bar-->
+<nav>
+	<div ><i class="fa fa-bars"></i></div>
+	<ul class="stay_ul">
+		<li><a href="main.html">Home</a></li>
+		<li><a href="herbs.html">Herbs <i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Climber</a></li>
+				<li><a href = "#"> Creeper</a></li>
+			</ul>
+		</li>
+		<li><a href="shrubs.html">Shrubs</a></li>
+		<li><a href="trees.html">Trees<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Cold Climate</a></li>
+				<li><a href = "#"> Moderate Climate</a></li>
+				<li><a href = "#"> Hot Climate</a></li>
+			</ul>			
+		</li>
+		<li><a href="gogreen.html">GoGreen<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Refuse</a></li>
+				<li><a href = "#"> Reduce</a></li>
+				<li><a href = "#"> Reuse</a></li>
+				<li><a href = "#"> Recycle</a></li>
+
+			</ul>					
+		</li>
+		<li><a href="login.html">Join Member</a></li>
+	</ul>
+</nav>
+
+<!--JQuery for the responsive nav bar toggle-->
+<script type="text/javascript">
+$("nav div").click(function() {
+	$("ul").slideToggle();
+	$("ul ul").css("display",none);
+});
+
+$("ul li").click(function() {
+	$("ul ul").slideUp();
+	$(this).find('ul').slideToggle();
+});
+ $(window).resize(function(){
+		if($(window).width() > 800){
+			$("ul").removeAttr('style')
+		}
+ });
+</script>
+</div>
+</div>
+
+<!--Div to hold the whole body -->
+<div class="hold">
+<div class="gohead"><h2>GoGreen</h2></div>
+
+<!--div to hold first 2 images-->
+<div class="row">
+    <div class="imggogreen">
+        <img src="gogreen/gogreen1.jpg" alt="Gogreen" style="width:100%">
+    </div>
+    <div class="imggogreen">
+        <img src="gogreen/gogreen2.jpg" alt="Gogreen" style="width:100%">
+    </div>
+</div>
+<div class="gohead">
+    <h2>Afforestaton and Plantation</h2>
+</div>
+    <div class="goinfo">
+        <p>The importance is immense in today’s scenario because it is mainly done for commercial purposes. In a natural forest or woodland, the trees are heterogeneous. Owing to the sensitivity to over usage and slow growths, these forests cannot be used continuously for commercial purposes like wood products. The process of planting trees in empty lands helps promote the fast propagation of specific types of trees for the wood industry.</p><br>
+
+        <p>With the increasing demand for wood fuels and building materials, this process helps to meet these demands without cutting down the natural forests. Deforestation can lead to the depletion of trees in water catchments and riverside zones. Afforestation ensures trees and plants that hold the soil in these sensitive areas remain protected.</p><br>
+        
+        <p>Many countries have introduced the practice of planting trees along with agricultural crops in croplands. The benefits of this practice, which is called agroforestry, are:</p><br>
+        
+        <p>In terms of the environmental benefits, planting trees is always beneficial whether it takes place in a barren land or is used as a method to regenerate a depleted forest. Trees help check atmospheric carbon dioxide; large scale afforestation can curb the problems caused due to burning of fossil fuels, industrialization and so forth</p>
+    </div>
+<div class="videos">
+    <h3>Watch this video for better understanding.</h3>
+</div>
+
+<!--class for video-->
+<div class="column">
+    <video  width="700px"controls>
+<source src="gogreen/afforestation.mp4" type="video/mp4">
+</video>
+</div>
+<div class="videos">
+  <h3>Problmes Causes Due to Deforartation</h3>
+</div>
+<div class="causes">
+    <p>
+        <h3>Loss of Habitat</h3>
+
+One of the most dangerous and unsettling effects of deforestation is the loss of animal and plant species due to their loss of habitat. 70% of land animals and plant species live in forests. Not only does deforestation threaten species known to us, but also those unknown.
+
+The trees of the rainforest that provide shelter for some species also provide the canopy that regulates the temperature. Deforestation results in a more drastic temperature variation from day to night, much like a desert, which could prove fatal for many inhabitants.
+<h3>Increased Greenhouse Gases</h3>
+
+In addition to the loss of habitat, the lack of trees also allows a greater amount of greenhouse gases to be released into the atmosphere. Healthy forests absorb carbon dioxide from the atmosphere, acting as valuable carbon sinks. Deforested areas lose that ability and release more carbon.
+<h3>Water in the Atmosphere</h3>
+
+The trees also help control the level of water in the atmosphere by helping to regulate the water cycle. In deforested areas, there is less water in the air to be returned to the soil. This then causes dryer soil and the inability to grow crops.
+    </p>
+</div>
+<div class="column">
+    <video  width="700px"controls>
+<source src="gogreen/Deforestation- Facts, Causes & Effects_HD.mp4" type="video/mp4">
+</video>
+</div>
+<div class="causes">
+	<p>
+		<h3>Soil Erosion and Flooding</h3>
+Further effects of deforestation include soil erosion and coastal flooding. Trees help the land to retain water and topsoil, which provides the rich nutrients to sustain additional forest life.
+
+Without forests, the soil erodes and washes away, causing farmers to move on and perpetuate the cycle. The barren land which is left behind in the wake of these unsustainable agricultural practices is then more susceptible to flooding, specifically in coastal regions.
+	</p>
+</div>
+	<div class="videos">
+		<h3>Importance of Afforestation and Measures:</h3>
+	</div>
+	<div class="causes">
+		<p>The importance is immense in today’s scenario because it is mainly done for commercial purposes. In a natural forest or woodland, the trees are heterogeneous. Owing to the sensitivity to over usage and slow growths, these forests cannot be used continuously for commercial purposes like wood products. The process of planting trees in empty lands helps promote the fast propagation of specific types of trees for the wood industry.</p><br>
+
+		<p>With the increasing demand for wood fuels and building materials, this process helps to meet these demands without cutting down the natural forests. Deforestation can lead to the depletion of trees in water catchments and riverside zones. Afforestation ensures trees and plants that hold the soil in these sensitive areas remain protected.</p><br>
+		
+		<p>Many countries have introduced the practice of planting trees along with agricultural crops in croplands. The benefits of this practice, which is called agroforestry, are:</p><br>
+		
+		<p>In terms of the environmental benefits, planting trees is always beneficial whether it takes place in a barren land or is used as a method to regenerate a depleted forest. Trees help check atmospheric carbon dioxide; large scale afforestation can curb the problems caused due to burning of fossil fuels, industrialization and so forth</p>
+</div>
+<div class="column">
+	<img src="gogreen/plantation23.jpg" alt="Gogreen" width="50%"> 
+</div>
+<div class="videos"><h3>Measures:</h3></div>
+<div class="causes">
+	<h3>1. Regulation on the cutting of trees</h3>
+	<p>The main reason for the increased deforestation is the industrial demand of trees. Although trees are perennial resource, large-scale exploitation can lead to the impossible revival. Regulated cutting and use of the rotational system can result in good timber crop harvesting without depleting the forest.</p><br>
+	
+	<h3>2. Controlling forest fires</h3>
+	<p>Forest fires may start by natural means, although in most cases it’s by man either intentionally or non-intentionally. To save our forest, more advanced techniques of fire detection, an extinguishing must be adopted.</p><br>
+	
+	<h3>3. Increasing the percentage of land area under afforestation</h3>
+	<p>Neglected areas that were previously used in farming should be used for tree growth. It will result in a qualitative use of abandoned soils thus a diversified afforestation.</p><br>
+	
+	<h3>4. Training the public on the importance of tree planting</h3>
+	<p>Many people tend to assume afforestation due to their ignorance. Increased public awareness will lead to the development of green cities as well as develop an alternative to deforestation. Afforestation should be matured in kids so that the culture is passed on to the next generation.</p><br>
+	
+	<h3>5. Government involvement in afforestation</h3>
+	<p>Although most governments of every country are particular on forest conservation, they are not implemented effectively. They should develop rules regulation with a strict follow-up like surveys on agroforestry resources, control the commercial use of forest and allocation of proper land for afforestation</p>
+</div>
+</div>
+<!--End of div hold-->
+</body>
+
+<!--Footer section -->
+<footer>
+	<div class=foots>
+		<div class="media">
+			<a href="https://www.facebook.com/">
+				<img src="media/facebook.png" width="35px" height="35px">
+				<h4>Facebook</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://twitter.com/">
+				<img src="media/twitter.png" width="35px" height="35px">
+				<h4>Twitter</h4>
+			</a></div>
+			<div class="media">
+			<a href="http://www.iucn.org/">
+				<img src="media/iucn.png" width="53px" height="35px">
+				<h4>IUCN</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://www.instagram.com/">
+				<img src="media/Instagram-Logo.png" width="35px" height="35px">
+				<h4>Instagram</h4>
+			</a></div>
+			<div class="about">
+				<h5>About Us</h5>
+				<p>This is a simple sample website where the <br>user can get information about the differnt<br> plants and theri respective classification<br> with clear image.</p>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<p>
+					Location: Newroad,Kathmandu<br>
+					Phone No.:9846592548/9841524855<br>
+					PO. BOX:25489<br>
+					Gmail:magarroshanthapa2019@gmail.com
+				</p>
+			</div>
+			<div class="copy-right">
+			<p>Copyright &copy Roshan Magar 2019</p></div>		
+	</div>
+</footer>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Aboutgreen</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="herbs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="stay">
+	<div class="header clearfix">
+		<div class="header2">
+			<!--Logo-->
+			<div class="logo">
+			<img src="logo.png" width="150px">
+		</div>
+
+		<!--Header of the page-->
+	<header>
+		<h1>AboutGreen</h1>
+	</header>
+</div>
+
+<!--search bar-->
+<form class="form">
+	<input type="search" name="search" id="search" placeholder="Search here...">
+	<input type="submit" name="sub" value="Search">
+</form>
+
+<!--Navigation bar-->
+<nav>
+	<div ><i class="fa fa-bars"></i></div>
+	<ul class="stay_ul">
+		<li><a href="main.html">Home</a></li>
+		<li><a href="herbs.html">Herbs <i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Climber</a></li>
+				<li><a href = "#"> Creeper</a></li>
+			</ul>
+		</li>
+		<li><a href="shrubs.html">Shrubs</a></li>
+		<li><a href="trees.html">Trees<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Cold Climate</a></li>
+				<li><a href = "#"> Moderate Climate</a></li>
+				<li><a href = "#"> Hot Climate</a></li>
+			</ul>			
+		</li>
+		<li><a href="gogreen.html">GoGreen<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Refuse</a></li>
+				<li><a href = "#"> Reduce</a></li>
+				<li><a href = "#"> Reuse</a></li>
+				<li><a href = "#"> Recycle</a></li>
+
+			</ul>					
+		</li>
+		<li><a href="login.html">Join Member</a></li>
+	</ul>
+</nav>
+
+<!--JQuery fo the responsive navigation toggle-->
+<script type="text/javascript">
+$("nav div").click(function() {
+	$("ul").slideToggle();
+	$("ul ul").css("display",none);
+});
+
+$("ul li").click(function() {
+	$("ul ul").slideUp();
+	$(this).find('ul').slideToggle();
+});
+ $(window).resize(function(){
+		if($(window).width() > 800){
+			$("ul").removeAttr('style')
+		}
+ });
+</script>
+</div>
+</div>
+<!--End of div class stay-->
+
+<!--Main body div of the page-->
+<div class="herbhead"><h2>Trees</h2></div>
+<div class="shortnote">
+	<p>In botany, a tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves in most species. In some usages, the definition of a tree may be narrower, including only woody plants with secondary growth, plants that are usable as lumber or plants above a specified height. In wider definitions, the taller palms, tree ferns, bananas, and bamboos are also trees. Trees are not a taxonomic group but include a variety of plant species that have independently evolved a trunk and branches as a way to tower above other plants to compete for sunlight. Trees tend to be long-lived, some reaching several thousand years old. Trees have been in existence for 370 million years. It is estimated that there are just over 3 trillion mature trees in the world.</p><br>
+
+    <p>A tree typically has many secondary branches supported clear of the ground by the trunk. This trunk typically contains woody tissue for strength, and vascular tissue to carry materials from one part of the tree to another. For most trees it is surrounded by a layer of bark which serves as a protective barrier. Below the ground, the roots branch and spread out widely; they serve to anchor the tree and extract moisture and nutrients from the soil. Above ground, the branches divide into smaller branches and shoots. The shoots typically bear leaves, which capture light energy and convert it into sugars by photosynthesis, providing the food for the tree's growth and development.</p><br>
+    
+    <p>Trees usually reproduce using seeds. Flowers and fruit may be present, but some trees, such as conifers, instead have pollen cones and seed cones. Palms, bananas, and bamboos also produce seeds, but tree ferns produce spores instead</p>
+</div>
+<div class="hold">
+    <div class="container1">
+        <h2>Claassification of the Trees:</h2>
+	</div>
+	<!--class to hold 3 images in row-->
+    <div class="row">
+    <div class="imagecontainer1">
+        <img src="trees/fir.jpg" alt="Fir" style="width:100%">
+        <div class="name"><h3>Fir</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Coniferophyta – Conifers<br>Class: Pinopsida<br>Order: Pinales<br>Family: Pinaceae – Pine family<br>Genus: Abies Mill. – fir<br>Scientific Name: Abies</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="trees/pome.jpg" alt="Pome " style="width:100%">
+        <div class="name"><h3>Pomegranate</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Myrtales<br>Family: Punicaceae – Pomegranate family<br>Genus: Punica L. – pomegranate<br>Species: Punica granatum L. – pomegranate<br>Scientific Name :Punica granatum</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="trees/peepal1.jpg" alt="Peepal" style="width:100%">
+		<div class="name"><h3>Peepal</h3></div>
+		<div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Hamamelididae<br>Order: Urticales<br>Family: Moraceae – Mulberry family<br>Genus: Ficus L.<br>Scientific Name: Ficus religiosa</p></div>
+	</div>
+</div>
+
+<!--Second row started-->
+<div class="secondrow">
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="trees/birch.jpg" alt="Brich" style="width:100%">
+        <div class="name"><h3>Birch</h3></div>
+    <div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision : Spermatophyta – Seed plants<br>Division : Magnoliophyta – Flowering plants<br>Class : Magnoliopsida – Dicotyledons<br>Subclass : Hamamelididae<br>Order : Fagales<br>Family : Betulaceae – Birch family<br>Genus :Betula L. – birch<br>Scientific Name: Betula</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="trees/black alder.jpg" alt="Tomato " style="width:100%">
+        <div class="name"><h3>Black Alder</h3></div>
+        <div class="infocontainer1"><p>Kingdom	:Plantae – Plants<br>Subkingdom	:Tracheobionta – Vascular plants<br>Superdivision	:Spermatophyta – Seed plants<br>Division	:Magnoliophyta – Flowering plants<br>Class	:Magnoliopsida – Dicotyledons<br>Subclass :Hamamelididae<br>Order	:Fagales<br>Family	:Betulaceae – Birch family<br>Genus	:Alnus Mill. – alder<br>Species	:Alnus glutinosa (L.) Gaertn. – European alder</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="trees/mango.jpg" alt="Mango" style="width:100%">
+		<div class="name"><h3>Mango</h3></div>
+		<div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Sapindales<br>Family: Anacardiaceae – Sumac family<br>Genus: Mangifera L. – mango <br>Species: Mangifera indica L. – mango <br>Scientific name: Mangifera indica</p></div>
+	</div>
+</div>
+
+<!--third row started-->
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="trees/maple.jpg" alt="Maple" style="width:100%">
+        <div class="name"><h3>Maple</h3></div>
+    <div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision : Spermatophyta – Seed plants<br>Division : Magnoliophyta – Flowering plants<br>Class : Magnoliopsida – Dicotyledons<br>Subclass : Rosidae<br>Order : Sapindales<br>Family : Aceraceae – Maple family<br>Genus : Acer L. – maple<br>Scientific Name: Acer</p>	</div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="trees/cedar.jpg" alt="Cedar " style="width:100%">
+        <div class="name"><h3>Moroccan Atlantic Cedar</h3></div>
+        <div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision : Spermatophyta – Seed plants<br>Division : Coniferophyta – Conifers<br>Class : Pinopsida<br>Order : Pinales<br>Family : Pinaceae – Pine family<br>Genus : Cedrus Trew – cedar<br>Species: Species  Cedrus deodara (Roxb.) G. Don f. – Deodar cedar</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="trees/coconut.jpg" alt="Coconut" style="width:100%">
+		<div class="name"><h3>Coconut</h3></div>
+		<div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision : Spermatophyta – Seed plants<br>Division : Magnoliophyta – Flowering plants<br>Class : Liliopsida – Monocotyledons<br>Subclass : Arecidae<br>Order : Arecales<br>Family : Arecaceae – Palm family<br>Genus : Cocos L. – coconut palm P<br>Species : Cocos nucifera L. – coconut palm<br>Scientific Name:Cocos nucifera</p></div>
+	</div>
+</div>
+<!--end of div class hold-->
+
+</body>
+
+<!--Footer Section-->
+<footer>
+	<div class=foots>
+		<div class="media">
+			<a href="https://www.facebook.com/">
+				<img src="media/facebook.png" width="35px" height="35px">
+				<h4>Facebook</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://twitter.com/">
+				<img src="media/twitter.png" width="35px" height="35px">
+				<h4>Twitter</h4>
+			</a></div>
+			<div class="media">
+			<a href="http://www.iucn.org/">
+				<img src="media/iucn.png" width="53px" height="35px">
+				<h4>IUCN</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://www.instagram.com/">
+				<img src="media/Instagram-Logo.png" width="35px" height="35px">
+				<h4>Instagram</h4>
+			</a></div>
+			<div class="about">
+				<h5>About Us</h5>
+				<p>This is a simple sample website where the <br>user can get information about the differnt<br> plants and theri respective classification<br> with clear image.</p>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<p>
+					Location: Newroad,Kathmandu<br>
+					Phone No.:9846592548/9841524855<br>
+					PO. BOX:25489<br>
+					Gmail:magarroshanthapa2019@gmail.com
+				</p>
+			</div>
+			<div class="copy-right">
+			<p>Copyright &copy Roshan Magar 2019</p></div>		
+	</div>
+</footer>
+</html> 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Aboutgreen</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="herbs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="stay">
+	<div class="header clearfix">
+		<div class="header2">
+			<!--Logo-->
+			<div class="logo">
+			<img src="logo.png" width="150px">
+		</div>
+		<!--head of Page-->
+	<header>
+		<h1>AboutGreen</h1>
+	</header>
+</div>
+<!--Search bar-->
+<form class="form">
+	<input type="search" name="search" id="search" placeholder="Search here...">
+	<input type="submit" name="sub" value="Search">
+</form>
+<!--Navigationn Bar-->
+<nav>
+	<div ><i class="fa fa-bars"></i></div>
+	<ul class="stay_ul">
+		<li><a href="main.html">Home</a></li>
+		<li><a href="herbs.html">Herbs <i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Climber</a></li>
+				<li><a href = "#"> Creeper</a></li>
+			</ul>
+		</li>
+		<li><a href="shrubs.html">Shrubs</a></li>
+		<li><a href="trees.html">Trees<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Cold Climate</a></li>
+				<li><a href = "#"> Moderate Climate</a></li>
+				<li><a href = "#"> Hot Climate</a></li>
+			</ul>			
+		</li>
+		<li><a href="gogreen.html">GoGreen<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Refuse</a></li>
+				<li><a href = "#"> Reduce</a></li>
+				<li><a href = "#"> Reuse</a></li>
+				<li><a href = "#"> Recycle</a></li>
+
+			</ul>					
+		</li>
+		<li><a href="login.html">Join Member</a></li>
+	</ul>
+</nav>
+<!--Jquery for responsive nav toggle-->
+<script type="text/javascript">
+$("nav div").click(function() {
+	$("ul").slideToggle();
+	$("ul ul").css("display",none);
+});
+
+$("ul li").click(function() {
+	$("ul ul").slideUp();
+	$(this).find('ul').slideToggle();
+});
+ $(window).resize(function(){
+		if($(window).width() > 800){
+			$("ul").removeAttr('style')
+		}
+ });
+</script>
+</div>
+</div>
+<!--End of div class stay-->
+
+<!--Main body of the page-->
+<div class="herbhead"><h2>Herb Plants</h2></div>
+<div class="shortnote">
+	<p>Herbs are plants that are grown either as a food (usually as a condiment), or because they have some use in treating diseases (or making them better), or for spiritual reasons (for example, their smell). Some herbs may act as an aphrodisiac.
+
+	The word herb comes from the Latin word herba, meaning grass, green stalks, or blades. Botanists use the word to mean any plant with soft, succulent tissues. But many people use the word to mean only herbs with some economic value.Herbs are small plants that have a fleshy or juicy stem when they are young. The stems of some herbs develop hard, woody tissue when they grow old.Most herbs are perennials. This means that the tops of the plants die each growing season, but the roots remain alive and produce new plants year after year.Some herbs are annuals. They live for only one growing season and must be raised from seed each year</p>
+</div>
+<div class="hold">
+    <div class="container1">
+        <h2>Claassification of the Herbs Plants:</h2>
+	</div>
+	<!--Class for three images in row-->
+    <div class="row">
+    <div class="imagecontainer1">
+        <img src="herbs/basil.jpg" alt="Basil" style="width:100%">
+        <div class="name"><h3>Basil</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Asteridae<br>Order: Lamiales<br>Family: Lamiaceae – Mint family<br>Genus: Ocimum L. – basil<br>Scientific Name: Ocimum Basilicum<br>Species : Ocimum basilicum L. – sweet basi</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="herbs/cardamon.jpg" alt="Cardemon " style="width:100%">
+        <div class="name"><h3>Cardamon</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Liliopsida – Monocotyledons<br>Subclass: Zingiberidae<br>Order: Zingiberales<br>Family: Zingiberaceae – Ginger family<br>Genus: Elettaria Maton – elettaria <br>Species: Elettaria cardamomum (L.) Maton – cardamom<br>Scientific name: Elettaria cardamomum</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="herbs/onion.jpg" alt="Onion" style="width:100%">
+		<div class="name"><h3>Onion</h3></div>
+		<div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Liliopsida – Monocotyledons<br>Subclass: Liliidae<br>Order: Liliales<br>Family: Liliaceae – Lily family<br>Genus: Allium L. – onion<br>Species: Allium aaseae Ownbey – South Idaho onion<br>Scientific Name:Allium cepa</p></div>
+	</div>
+</div>
+<!--Second row initiation-->
+<div class="secondrow">
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="herbs/mint-plant.jpg" alt="Mint" style="width:100%">
+        <div class="name"><h3>Mint</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae<br>	Sub-kingdom:Tracheobionta<br>Division:Magnoliophyta<br>Sub-division:spermatophyta<br>Class: Magnoliopsidia<br>Sub-class: Asteridae<br>Order: Lamiales<br>Family: Lamiceae<br>Genus: Mentha L.<br>Species:Mentha requienii<br>Scientific name: Mentha</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="herbs/tomato.jpg" alt="Tomato " style="width:100%">
+        <div class="name"><h3>Tomato</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Asteridae<br>Order: Solanales<br>Family: Solanaceae – Potato family<br>Genus: Solanum L. – nightshade P<br>Species: Solanum lycopersicum L.<br>Scientific name: Solanum lycopersicum</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="herbs/coriandrum.jpg" alt="Coriandrum" style="width:100%">
+		<div class="name"><h3>Coriandrum</h3></div>
+		<div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Apiales<br>Family: Apiaceae – Carrot family<br>Genus: Coriandrum L. – coriander P<br>Species: Coriandrum sativum L.<br>Scientific name: Coriandrum sativum</p></div>
+	</div>
+</div>
+
+<!--Third row initiation-->
+<div class="thirdrow">
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="herbs/wheat.jpg" alt="Wheat" style="width:100%">
+        <div class="name"><h3>Wheat</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Liliopsida – Monocotyledons<br>Subclass: Commelinidae<br>Order: Cyperales<br>Family: Poaceae – Grass family<br>Genus: Triticum L. – wheat<br>Scientific Name: Triticum</p>	</div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="herbs/rice.jpg" alt="Rice " style="width:100%">
+        <div class="name"><h3>Rice</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Liliopsida – Monocotyledons<br>Subclass: Commelinidae<br>Order: Cyperales<br>Family: Poaceae – Grass family<br>Genus: Oryza L. – rice<br>Scientific Name: Oryza Sativa</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="herbs/ginger.jpg" alt="Ginger" style="width:100%">
+		<div class="name"><h3>Ginger</h3></div>
+		<div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division :Magnoliophyta – Flowering plants<br>Class :Liliopsida – Monocotyledons<br>Subclass :Zingiberidae<br>Order :Zingiberales<br>Family :Zingiberaceae – Ginger family<br>Genus :Zingiber Mill. – ginger<br>Scientific Name:Zingiber officinale</p></div>
+	</div>
+</div>
+</div><!--end div of class hold-->
+</body>
+
+<!--Footer section-->
+<footer>
+	<div class=foots>
+		<div class="media">
+			<a href="https://www.facebook.com/">
+				<img src="media/facebook.png" width="35px" height="35px">
+				<h4>Facebook</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://twitter.com/">
+				<img src="media/twitter.png" width="35px" height="35px">
+				<h4>Twitter</h4>
+			</a></div>
+			<div class="media">
+			<a href="http://www.iucn.org/">
+				<img src="media/iucn.png" width="53px" height="35px">
+				<h4>IUCN</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://www.instagram.com/">
+				<img src="media/Instagram-Logo.png" width="35px" height="35px">
+				<h4>Instagram</h4>
+			</a></div>
+			<div class="about">
+				<h5>About Us</h5>
+				<p>This is a simple sample website where the <br>user can get information about the differnt<br> plants and theri respective classification<br> with clear image.</p>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<p>
+					Location: Newroad,Kathmandu<br>
+					Phone No.:9846592548/9841524855<br>
+					PO. BOX:25489<br>
+					Gmail:magarroshanthapa2019@gmail.com
+				</p>
+			</div>
+			<div class="copy-right">
+			<p>Copyright &copy Roshan Magar 2019</p></div>		
+	</div>
+</footer><!--End-->
+</html>

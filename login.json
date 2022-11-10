@@ -1,0 +1,14 @@
+{
+    "users":[
+        {
+            "fullname":"Samir Gurung",
+            "username":"samir@gmail.com",
+            "password":"sami12"
+        },
+        {
+            "fullname":"Mahesh Magar",
+            "username":"mahesh@gmail.com",
+            "password":"mannoo"  
+        }
+    ]
+}

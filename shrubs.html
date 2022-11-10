@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Aboutgreen</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="herbs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="stay">
+	<div class="header clearfix">
+		<div class="header2">
+			<!--Logo-->
+			<div class="logo">
+			<img src="logo.png" width="150px">
+		</div>
+	<header><!--header of the page-->
+		<h1>AboutGreen</h1>
+	</header>
+</div>
+<!--Search Bar-->
+<form class="form">
+	<input type="search" name="search" id="search" placeholder="Search here...">
+	<input type="submit" name="sub" value="Search">
+</form>
+
+<!--Navigation Bar-->
+<nav>
+	<div ><i class="fa fa-bars"></i></div>
+	<ul class="stay_ul">
+		<li><a href="main.html">Home</a></li>
+		<li><a href="herbs.html">Herbs <i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Climber</a></li>
+				<li><a href = "#"> Creeper</a></li>
+			</ul>
+		</li>
+		<li><a href="shrubs.html">Shrubs</a></li>
+		<li><a href="trees.html">Trees<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Cold Climate</a></li>
+				<li><a href = "#"> Moderate Climate</a></li>
+				<li><a href = "#"> Hot Climate</a></li>
+			</ul>			
+		</li>
+		<li><a href="gogreen.html">GoGreen<i class="fa fa-sort-desc"></i></a>
+			<ul>
+				<li><a href = "#"> Refuse</a></li>
+				<li><a href = "#"> Reduce</a></li>
+				<li><a href = "#"> Reuse</a></li>
+				<li><a href = "#"> Recycle</a></li>
+
+			</ul>					
+		</li>
+		<li><a href="login.html">Join Member</a></li>
+	</ul>
+</nav><!--End of nav bar-->
+
+<!--JQuery for responsive nav toggle-->
+<script type="text/javascript">
+$("nav div").click(function() {
+	$("ul").slideToggle();
+	$("ul ul").css("display",none);
+});
+
+$("ul li").click(function() {
+	$("ul ul").slideUp();
+	$(this).find('ul').slideToggle();
+});
+ $(window).resize(function(){
+		if($(window).width() > 800){
+			$("ul").removeAttr('style')
+		}
+ });
+</script>
+</div>
+</div>
+<!--End of div class stay-->
+
+<!--Main body div-->
+<div class="herbhead"><h2>Shrub Plants</h2></div>
+<div class="shortnote">
+	<p>Shrubs are woody Plants of relatively low height, having several steams arsing from the base and lacking a single trunk. They are also known as Buses, especially when they are much-branched and dense,while others are tall and thin. Some are leafy green, while others display coloueful flowers. They grow upward 10 feet(about 3 meters). 
+		Shrubs can be Flowering and Ornamental. Shrubs are an important feature of the landscape planting, being used for formal decorative groups, hedges, screens, and background plantings, to which they contibute pattern, colour, fragrancw, or utility. An area of cultivated shrubs in a park or garden is called Shrubbery.Some examples are: Hibiscus,Viburnum,Boxwoods, etc.</p>
+</div>
+<div class=hold>
+    <div class="container1">
+        <h2>Claassification of the Shrub Plants:</h2>
+	</div>
+	
+	<!--Div for 3 images and first row-->
+    <div class="row">
+    <div class="imagecontainer1">
+        <img src="shrubs/hibiscus2.jpg" alt="Hibiscus" style="width:100%">
+        <div class="name"><h3>Hibiscus</h3></div>
+    <div class="infocontainer1"><p>Kingdom : Plantae – Plants<br>Subkingdom : Tracheobionta – Vascular plants<br>Superdivision : Spermatophyta – Seed plants<br>Division : Magnoliophyta – Flowering plants<br>Class : Magnoliopsida – Dicotyledons<br>Subclass : Dilleniidae<br>Order : Malvales<br>Family : Mallow family<br>Genus : Hibiscus L. – rosemallow<br>Scientific Name: Hibiscus rosa-sinensis</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="shrubs/rose.jpg" alt="Rose " style="width:100%">
+        <div class="name"><h3>Rose</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Rosales<br>Family: Rosaceae – Rose family<br>Genus: Rosa L. – ros<br>Scientific Name: Rosa</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="shrubs/cotton.jpg" alt="Cotton" style="width:100%">
+		<div class="name"><h3>Cotton</h3></div>
+		<div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Dilleniidae<br>Order: Malvales<br>Family: Malvaceae – Mallow family<br>Genus: Gossypium L. – cotton<br>Scientific Name: Ceiba pentandra</p></div>
+	</div>
+</div>
+
+<!--Second row started-->
+<div class="secondrow">
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="shrubs/marigold.jpg" alt="Marigold" style="width:100%">
+        <div class="name"><h3>Marigold</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae - Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: AsteridaeOrder: Asterales<br>Family: Asteraceae – Aster family<br>Genus: Tagetes L. – marigold<br>Scientific Name: Tagetes erecta</p></div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="shrubs/Cotoneaster.jpg" alt="Cotoneaster" style="width:100%">
+        <div class="name"><h3>Cotoneaster</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plantsv<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Rosales<br>Family: Rosaceae – Rose family<br>Genus: Cotoneaster Medik. – cotoneaster <br>Species: Cotoneaster multiflorus Bunge – cotoneaster<br>Scientific Name:Cotoneaster </p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="shrubs/camelia.jpg" alt="Camelia" style="width:100%">
+		<div class="name"><h3>Camellia</h3></div>
+		<div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Dilleniidae<br>Order: Theales<br>Family: Theaceae – Tea family<br>Genus: Camellia L. – camellia <br>Species: Camellia sinensis (L.) Kuntze<br>Scientific Name: Camellia japonica</p></div>
+	</div>
+</div>
+
+<!--Third row started-->
+<div class="row">
+    <div class="imagecontainer1">
+        <img src="shrubs/henna.jpg" alt="Henna" style="width:100%">
+        <div class="name"><h3>Henna</h3></div>
+    <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Myrtales<br>Family: Lythraceae – Loosestrife family<br>Genus: Lawsonia L. – lawsonia P<br>Speciesp Lawsonia inermis L. – henna<br>Scientific Name: Lawsonia inermis</p>	</div>
+    </div>  
+    <div class="imagecontainer1">
+        <img src="shrubs/golddust.jpg" alt="Golddust " style="width:100%">
+        <div class="name"><h3>Golddust</h3></div>
+        <div class="infocontainer1"><p>Kingdom: Plantae – Plants<br>Subkingdom: Tracheobionta – Vascular plants<br>Superdivision: Spermatophyta – Seed plants<br>Division: Magnoliophyta – Flowering plants<br>Class: Magnoliopsida – Dicotyledons<br>Subclass: Rosidae<br>Order: Cornales<br>Family: Cornaceae – Dogwood family<br>Genus: Aucuba Thunb. – acuba <br>Species: Aucuba japonica Thunb<br>Scientifi name: Aucuba japonica</p></div>
+	</div>
+	<div class="imagecontainer1">
+		<img src="shrubs/redmaple.jpg" alt="Redmaple" style="width:100%">
+		<div class="name"><h3>Red Maple</h3></div>
+		<div class="infocontainer1"><p>Kingdom :Plantae – Plants<br>Subkingdom :Tracheobionta – Vascular plants<br>Superdivision :Spermatophyta – Seed plants<br>Division :Magnoliophyta – Flowering plants<br>Class :Magnoliopsida – Dicotyledons<br>Subclass :Rosidae<br>Order :Sapindales<br>Family :Aceraceae – Maple family<br>Genus :Acer L. – maple P<br>Species :Acer rubrum L. – red maple<br>Scientific Name: Acer rubrum L.</p></div>
+	</div>
+</div>
+<!--end of div class hold-->
+</body> 
+
+<!--Footer Section-->
+<footer>
+	<div class=foots>
+		<div class="media">
+			<a href="https://www.facebook.com/">
+				<img src="media/facebook.png" width="35px" height="35px">
+				<h4>Facebook</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://twitter.com/">
+				<img src="media/twitter.png" width="35px" height="35px">
+				<h4>Twitter</h4>
+			</a></div>
+			<div class="media">
+			<a href="http://www.iucn.org/">
+				<img src="media/iucn.png" width="53px" height="35px">
+				<h4>IUCN</h4>
+			</a></div>
+			<div class="media">
+			<a href="https://www.instagram.com/">
+				<img src="media/Instagram-Logo.png" width="35px" height="35px">
+				<h4>Instagram</h4>
+			</a></div>
+			<div class="about">
+				<h5>About Us</h5>
+				<p>This is a simple sample website where the <br>user can get information about the differnt<br> plants and theri respective classification<br> with clear image.</p>
+			</div>
+			<div class="address">
+				<h5>Address</h5>
+				<p>
+					Location: Newroad,Kathmandu<br>
+					Phone No.:9846592548/9841524855<br>
+					PO. BOX:25489<br>
+					Gmail:magarroshanthapa2019@gmail.com
+				</p>
+			</div>
+			<div class="copy-right">
+			<p>Copyright &copy Roshan Magar 2019</p></div>		
+	</div>
+</footer>
+</html>

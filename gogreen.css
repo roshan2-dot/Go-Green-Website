@@ -1,0 +1,242 @@
+*{
+	margin:0;
+	padding:0px;
+}
+body{
+	background-color:#c3ecc8
+}
+/*css for the header of the page*/
+.header{
+	color:rgb(7, 92, 59);
+	background-color: #bdbdb6
+}
+/*css for header*/
+h1{
+	font-size: 85px;
+	font-style:oblique;
+}
+/*css for logo*/
+.logo{
+	display: inline-block;
+}
+/*css for navigation bar*/
+nav{
+	background-color: #15c05c;
+}
+nav div{
+	background:lightgrey;
+	color:#292929;
+	font-size:20px;
+	padding:0.6em;
+	cursor:pointer;
+	display:none;
+}
+ul{
+	position: relative;
+	list-style-type: none;
+}
+ul li a{
+	text-decoration: none;
+	color:black;
+	padding: 15px;
+}
+ul,li{
+	display:inline-block;
+	padding:5px;
+	margin-left: 15px;
+}
+ul li i{padding-left: 7px}
+/*css for the hover effect in navigation bar*/
+a:hover{
+	color:rgb(7, 129, 7);
+	background-color:#bdbdb6;
+	padding:5px;
+	border-radius: 10px;
+}
+ul ul{
+	position:absolute;
+	min-width: 200px;
+	background:lightgreen;
+	display: none;
+}
+ul ul li{
+	display: block;
+	background:lightgreen;
+}
+ul li:hover ul{
+	display: block;
+}
+/*css for page header*/
+header{
+	display:inline-block;
+	font-size: 30px;
+}
+.header2{
+	display: inline-block;
+	border-bottom:solid green;
+}
+/*css for search bar*/
+.form{
+	float:right;
+	background-color:white;
+	height:20px;
+	border-radius:10px;
+	border-color:lightgreen;
+	padding:10px;
+	margin-top:20px;
+	margin-right: 10px;
+
+}
+.clearfix::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+/*css for input section in search bar*/
+input{
+	border:none;
+	background:none;
+	padding-top:5px;
+}
+#search{
+	margin-bottom: 20px;
+	color:red;
+}
+/*css for first 2 images in body*/
+.imggogreen{
+    float: left;
+    width:45%;
+    padding:5px;
+    margin-left: 20px;
+    border: 1px solid black;
+    margin-top:10px;
+}
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+/*css for header of body*/
+.gohead{
+    padding:10px;
+	margin-top: 5px;
+	font-size: 25px;
+	color:black;
+	background-color:darkcyan ;
+}
+/*css for first paragraph container*/
+.goinfo{
+    padding:10px;
+    font-size: 17px;
+    text-align: justify;
+}
+/*css for second header class*/
+.videos{
+    padding:5px;
+    background-color:darkcyan ;
+    margin:4px;
+}
+/*css for video conrtainer*/
+.column{
+    margin-left: 300px;
+}
+/*css for remaining paragraph conainer*/
+.causes{
+	padding:10px;
+	font-size: 17px;
+	text-align: justify;
+}
+/*css for footer container class*/
+.foots{
+	background-color: #bdbdb6;
+	padding:30px;
+	margin-top: 150px;
+}
+/*css for images container in footer*/
+.media{
+	float: left;
+	padding:10px;
+	border:1px solid black;
+	margin:5px;
+	border-radius: 10px;
+}
+/*css for the header of social media*/
+h4{
+	font-size: 10px;
+	font-family: sans-serif;
+	text-align: center;
+}
+/*css for about container*/
+.about{
+	margin-left: 50px;
+	display:inline-block;
+	text-align: justify;
+}
+/*css for header of address and about*/
+h5{
+	display:inline-block;
+	border-bottom: 2px solid black;
+}
+/*css for address container*/
+.address{
+	float:left;
+	margin-left: 30px;
+}
+/*css for copyright section*/
+.copy-right{float:right; margin-top: 100px;}
+
+
+/*css for the responsive web page*/
+@media screen and (max-width: 800px){
+	.logo img{width:70px; height:70px;}
+	h1{
+		font-size: 50px;
+	}
+	.home{font-size: 12px;}
+	.form{width:125px;
+		height:10px;
+	}
+	#search{font-size:9px;}
+	input{font-size: 9px;}
+	nav div{
+		display:block;
+		background-color: rgb(34, 133, 133);
+		height:35px;
+	}
+	.stay_ul{
+		display:none;
+		position:static;
+		background:#2ecc71;
+	}
+	.stay_ul li{
+		display:block;
+	}
+	ul ul{
+		position:static;
+	}
+	.gohead{font-size: 13px;}
+	.imggogreen{
+		height: 120px;
+		width: 120px;
+	}
+	.goinfo{
+		font-size: 12px;
+	}
+	.videos{font-size: 13px;}
+	.column{
+		margin-left: 80px;
+	}
+	video{height: 200px;
+	width: 200px;
+	}
+	.causes{font-size: 12px;}
+	.media{
+		height: 10px;
+		width: 20px;
+		border: none;
+		margin-bottom: 50px;
+	}
+	.about{font-size: 10px;}
+	.address{font-size: 10px; margin-left: 50px;}
+	.copy-right{font-size: 10px; margin-top: 10px;}
+}
